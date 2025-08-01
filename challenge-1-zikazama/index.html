@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- code here -->
+    <div id="mySidepanel" class="sidepanel">
+      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      > -->
+      <a href="#" class="disable-link">About</a>
+      <a href="#" class="disable-link">Service</a>
+      <a href="#" class="disable-link">Our works</a>
+      <a href="#" class="disable-link">Team</a>
+      <div>
+        <span class="background-primary" style="color: white; width: 100%"
+          >Contact Us</span
+        >
+      </div>
+    </div>
+    <nav class="nav">
+      <div style="margin-left: 20px;">
+        <span style="color: #fdfdfd; font-size: 20px; line-height: 34px"
+          >Tech.</span
+        >
+      </div>
+      <div class="nav-center">
+        <a href="#" class="disable-link">About</a>
+        <a href="#" class="disable-link">Service</a>
+        <a href="#" class="disable-link">Our works</a>
+        <a href="#" class="disable-link">Team</a>
+      </div>
+      <div class="nav-right">
+        <span class="background-primary" style="color: white">Contact Us</span>
+      </div>
+      <div class="nav-mobile" onclick="openNav()" style="margin-right: 20px;">
+        <span id="burger">&#9776;</span>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="hero-item-text" style="display: flex; gap: 30px; flex-direction: column;">
+        <div class="display-lg font-bold">Build with the Future.</div>
+        <div class="text-lg font-regular">
+          From building sleek websites and mobile apps to integrating AI
+          solutions, we help brands turn ideas into powerful digital experiences
+          that connect, engage, and scale.
+        </div>
+        <div class="text-md font-medium background-primary" style="color: white; display: inline-block; padding: 15px 30px; border-radius: 9999px; cursor: pointer;">
+          Let's Talk
+        </div>
+      </div>
+      <div class="hero-item-image">
+        <img class="hero-image" style="height: 600px;" src="./assets/images/hero-hand.png" alt="Hero">
+      </div>
+    </div>
+    <script>
+      let tabStatus = false;
+      /* Set the width of the sidebar to 250px (show it) */
+      function openNav() {
+        if (tabStatus === false) {
+          document.getElementById("mySidepanel").style.width = "100%";
+          document.getElementById("mySidepanel").style.display = "flex";
+          document.getElementById("burger").innerHTML = "&times;";
+          tabStatus = true;
+        } else {
+          document.getElementById("mySidepanel").style.width = "0";
+          document.getElementById("mySidepanel").style.display = "none";
+          document.getElementById("burger").innerHTML = "&#9776;";
+          tabStatus = false;
+        }
+
+        let variabel = 1;
+        let variabel2 = "1";
+
+        let kata = `${variabel} ini satu`;
+
+      }
+    </script>
+  </body>
+</html>
